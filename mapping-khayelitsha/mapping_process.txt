@@ -1,0 +1,34 @@
+# Overview
+With the high-resolution historical aerial images taken by Landsat and were accessible through Google Earth Pro, the spatial analysis was accomplished by [**ERDAS IMAGINE**](https://www.hexagongeospatial.com/products/power-portfolio/erdas-imagine) and [**ArcGIS**](http://desktop.arcgis.com/en/). We yielded the map of informal settlements in Khayelitsha (Arc GIS), classified raster images (ERDAS IMAGINE), heatmaps of informal structures (ArcGIS), and ratios of formal/informal building footprints to in Khayelitsha. 
+
+**[Figure_ process_illustratioin]**
+
+## **Mapping the Boundary of Informal Settlements in Khayelitsha**
+By observing the aerial images from 2015 to 2018, we found that the boundary of informal settlements remains stable from 2015 to 2017 but there was a prominent expansion of informal settlements in 2018. Therefore, we manually mapped the informal settlements in 2015 and 2018 with ArcGIS. 
+
+## **Classify Aerial Image with ERDAS IMAGINE**
+With high-resolution images of Khayelitsha from 2015-2018 (images taken on Jan./Feb. were selected), we ran a supervised classification with ERDAS IMAGINE. All the aerial images were classified into five categories: 
+
+| Category      | Criteria                                    |
+| ------------- |:-------------------------------------------:|
+| No data       | Moise and no data cells                     | 
+| Formal        | Building footprints of formal settlements   |  
+| Informal      | Budiling footprints of informal settlements | 
+| Green         | Areas with plantings                        |
+| Bare          | Bare land                                   |
+| Road          | High ways, main roads, and other minor roads|
+
+
+According to the classification criteria, 40-100 training points were manually selected to build a signature file which provided information regarding the color and texture of each category through machine learning. The classification process compared the image with the signature file and built a raster accordingly. 
+
+**[Figure_ illustratioin_classification]**
+ 
+## Create Heat Map and Calculate the Rations of Formal/Informal Building Footprints with ArcGIS
+
+The classed raster image was processed with geoprocessing tools in ArcGIS. The following model was used to conduct spatial analysis:
+
+[Extract by mask](https://pro.arcgis.com/en/pro-app/tool-reference/spatial-analyst/extract-by-mask.htm) was used to cut the raster image to the boundary of Khayelitsha. [Focal statistics](http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/focal-statistics.htm) further refined the classification by reducing the noises of the original classified raster. A set of tools including [Reclassify](http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/reclassify.htm), [Set Null](http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/set-null.htm), [Raster to Polygon](http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/set-null.htm), and [Feature to Point](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/feature-to-point.htm) was applied to extract center points of each informal settlement's identified. [Kernel Density](http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/kernel-density.htm) was the last step to generate heatmaps for informal settlements. Same parameters were used in processing each year's raster layer in order to generate more comparative results. 
+
+**[Figure_geoprocessing_illustratioin]**
+ 
+
