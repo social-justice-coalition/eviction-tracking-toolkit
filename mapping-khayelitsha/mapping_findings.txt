@@ -1,0 +1,56 @@
+# Key Findings
+**[Figure__key_findings.png]**
+
+## Informal Dwellings in 2011
+A heat map based on the aerial image of 2011 (census year) was created. The locations of high-density informal structure areas shown in the heat map are consistent with the locations of informal settlements according to the census map. The largest informal settlement was situated in Khayelitsha T3-V2. Another large consecutive informal settlement was in Khayelitsha T2-V2b and Monwabisi. The northwest corner has the highest density and most number of "shack in backyard." 
+
+**[Figure__2011 DENSITY.png]**
+
+## The Boundary Change of Informal Settlements between 2015 and 2019
+The map below shows the boundaries of informal settlements which were manually digitized according to the aerial image of 2015 and 2019. The most prominent boundary expansion of informal settlements was observed in Khayelitsha T2-V2B. Other informal settlement expansions occurred in Bongani TR Section and Silver Town. From 2015 to 2019, the area of informal settlements increased by 60.88%, increasing to 21.89 square kilometers (table 4-2-1). 
+
+**Table 4-2-1. Area of Informal Settlements**
+
+| Year       | Aera (SQ KM)| Percentage|Increasing Rate|
+|------------|:-----------:|:---------:|:---------:|
+| 2015       | 19.81       | 36.69%    |-    | 
+| 2018       | 21.89       | 40.54%    | 10.49%|
+| 2019       | 31.87      | 59.02%    | 45.60%|
+| Khayelitsha| 54.00       | 100.00%   | -    |
+
+**[Figure__2015-2019 boundary]**
+
+**[Figure__ Boundary_expansion]**
+
+## Ratios of Formal to Informal Building Footprints of 2011, 2015 to 2019
+Since the [supervised classification](http://knightlab.org/rscc/labs/Lab05_Image_Classification_Supervised-2016.pdf) was conducted based on the maximum likelihood of each pixel to the classification criteria derived from machine learning of training sites manually assigned, there are unavoidable nuances between the classification results of each year. Therefore, calculating ratios of formal to informal building footprints of each year will generate more accurate data than the direct calculation of area or percentage of each category. Based on the refined classified raster of Khayelitsha, the ratios were calculated and showed in table 4-2-2.
+
+**Table 4-2-2. Ratios of Area of Formal to Informal Building Footprints**
+
+| Year                               | 2011     |2015     |2016     |2017     |2018     |2019|
+|------------------------------------|:--------:|:-------:|:-------:|:-------:|:-------:|:----|
+| Formal:Informal |100:112  | 100:134  | 100:190  | 100:263  | 100:262  |100:271|
+
+**[Figure__ Density_increase]**
+
+## Estimate the Number of Informal Dwellings and Population in Khayelitsha 
+The 2011 [census](http://resource.capetown.gov.za/documentcentre/Documents/Maps%20and%20statistics/2011_Census_CT_Suburb_Khayelitsha_Profile.pdf) of Khayelitsha was set as a benchmark to estimate the number of informal dwellings and the total population of Khayelitsha. Observing the aerial images across these years, we found that there was growth in both formal and informal dwellings. However, since the actual number of formal dwellings in 2019 was not available, we assumed that the number of formal dwellings remains constant from 2011 to 2019 and then estimate the number of informal dwellings based on the ratios of formal/informal building footprints. The estimations are as follows:
+
+**Table 4-2-3. Estimation of Dwelling Amount and Population in Khayelitsha, 2019**
+
+|	|2011	| 2019 Estimate|
+|-------|:-----:|:------------:|
+|Formal Dwelling|52,186 (52k)|52,186 (52k)|
+|Informal Dwelling|64,142 (64k)|155,201 (155k)|
+|Ratio|	100:112| 100:271|
+|Total Dwelling|116,328 (116k)|207,387(207k)|
+|Total Population|391,749 (392k)|698,401 (698k)|
+
+We should note that the estimations are based on the assumption that the number of formal dwellings was constant regardless of the actual growth. Thus, the actual numbers of dwellings and population are **greater that the estimations**. 
+
+## Tracking the Hotspots of Informal Settlements
+The maps below illustrate the hotspots and density variations of informal structures in Khayelitsha for each year from 2015 to 2019. The density scales were assessed based on the distributions of informal building footprints in each year. Therefore, the maps do not provide cross density comparsions across different years. (PLZ CHECK THE WORDING OF THIS) 
+
+In general, there was no significant change in the hotspots of informal structures. The 
+
+**[Figure__2015-2019 DENSITY.png]**
