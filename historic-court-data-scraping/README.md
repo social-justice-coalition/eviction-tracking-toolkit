@@ -1,12 +1,14 @@
 # historic-court-data-scraping
 
-
+### Purpose
 
 To analyze and capture previous eviction cases, we used Historic High Court Data from the SAFLII. The Southern African Legal Information Institute (SAFLII) is an online repository of legal information from South Africa, and we chose the databases: South Africa: Western Cape High Court, Cape Town to get the cases about ‘Prevention of Illegal Eviction’ from 1993 to 2018. By scraping each case using BeautifulSoup and extracting the information by using SpaCy and Regex packages, we generate an Excel file of structured historic data that gives an overview of court decisions in the post-apartheid era.
 
 The code can be adjusted and used for future years to update the database, but this may be a challenge without knowledge of Python or JupyterNotebooks. This is an ongoing project.
 
 ----
+
+### Process
 
 This code has two main components: the first piece checks if there was any case about ‘Prevention of Illegal Eviction’ in a specific year; the second piece extracts the information from each case into the larger dataset.
 
