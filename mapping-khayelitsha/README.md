@@ -24,7 +24,6 @@ The following data can be found in the repository in the folder entitled "mappin
 * Illustration of the mapping process;
 * Illustration of geoprocessing methods;
 * Infographics of key findings;
-* Anti-eviction poster. 
 
 ## Data Sources
 * SDI&GIS, City of Cape Town. (2013) 2011 Census Suburb Khayelitsha. Retrived from: http://resource.capetown.gov.za/documentcentre/Documents/Maps%20and%20statistics/2011_Census_CT_Suburb_Khayelitsha_Profile.pdf
